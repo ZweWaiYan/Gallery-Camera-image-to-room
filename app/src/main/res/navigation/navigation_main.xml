@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/uploadFragment">
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:name="com.letuse.uploadimagetoroom.UploadFragment"
+        android:label="fragment_upload"
+        tools:layout="@layout/fragment_upload" >
+        <action
+            android:id="@+id/action_uploadFragment_to_nextFragment"
+            app:destination="@id/nextFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nextFragment"
+        android:name="com.letuse.uploadimagetoroom.NextFragment"
+        android:label="fragment_next"
+        tools:layout="@layout/fragment_next" />
+</navigation>
